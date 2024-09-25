@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del cuerpo */
+body {
+    line-height: 1.6;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* Estilos del encabezado */
+.btn-buscar{
+  display: none;
+}
+.btn-carrito{
+  display: none;
+}
+
+.main-logo{
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 40px;
+}
+.navegacion{
+    padding:0 300px ;
+}
+
+.navegacion nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.navegacion nav ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+header {
+  background: black;
+  color: #fff;
+  padding: 10px 0;
+}
+
+
+/* Estilos del banner principal */
+.banner {
+  padding: 100px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background-color: black;
+  
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-text h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.banner-text p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.banner-text .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff5722;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Estilos de la sección de productos destacados */
+#products {
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background: #f4f4f4;
+}
+
+#products .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#products .container h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product {
+  flex: 1 1 calc(25% - 20px);
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  
+}
+
+.product p {
+  color: black;
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.product .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+.wapp{
+  position: fixed; /* This makes the icon stay in place when scrolling */
+  bottom: 20px; /* Distance from the bottom of the page */
+  right: 20px; /* Distance from the right edge of the page */
+  z-index: 100;
+  background-color: rgba(100,205,138,1);
+  border-radius: 50px;
+  padding: 8px;
+}
+
+/* Estilos de la sección "Sobre Nosotros" */
+#about {
+  padding: 40px 0;
+  background: black;
+}
+
+#about .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  color: white;
+  text-align: center;
+}
+
+
+/* Estilos del pie de página */
+footer {
+  background: black;
+  color: #fff;
+  padding: 10px 0;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* MEDIA RESPONSIVE */
+
+/* Pantallas menores a 768px */
+@media (max-width: 768px) {
+  /* HEADER NAVEGACION */
+  .navegacion nav ul {
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+  } 
+
+  /* BANNER */
+  .banner {
+    padding: 50px;
+  }
+
+  /* BODY PRODUCTO */ 
+  .product {
+    flex: 1 1 calc(33% - 20px); /* 3 productos por fila en pantallas medianas */
+  }
+}
+
+/* Pantallas menores a 480px */
+@media (max-width: 480px) {
+  /* HEADER NAVEGACION */
+  .navegacion {
+    padding: 0 20px;
+  }
+
+  /* BANNER */
+  .banner {
+    padding: 20px;
+  }
+
+  /* BODY PRODUCTO */ 
+  .product {
+    flex: 1 1 calc(50% - 20px); /* 2 productos por fila */
+  }
+}
